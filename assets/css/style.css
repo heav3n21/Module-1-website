@@ -1,0 +1,224 @@
+/* this it the universal selector the has the size of the website
+being the max of the screen*/
+* {
+
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+/* this is the body seclector that connects with the body element/ atribute to give the default 
+backgorund color of any element inside.*/
+
+body {
+    background-color: #d9dcd6;
+    
+}
+/*this is a class selector named header when called with a clsss it will change the state  */
+.header {
+    padding: 20px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background-color: #2a607c;
+    color: #ffffff;}
+/*this class is more specific saying in class header with atribute of h1 display it as inline 
+with font size of 48px*/
+.header h1{
+    display: inline-block;
+    font-size: 48px;
+}
+/* i removed .header with h1 because class = seo 
+will do the same exact thing no need to be so specific
+this is calling a class of header with whatever inside of it .being used to only effect the "SEO"
+in the header */
+ .seo {
+    color: #d9dcd6;
+}
+/*this is a class header that is more specific saying in the class the childern with the 
+attribute of div inside it will effect the element with these properties */
+.header div {
+    padding-top: 15px;
+    margin-right: 20px;
+    float: right;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 20px;
+}
+/*this is a class named header with it being more specific effecting only the attributes inside
+the li*/
+.header div li {
+    display: inline-block;
+    margin-left: 25px;
+    list-style-type: none;
+}
+
+/*this a a selector effecting all a attributes effecting its text color and text decoration for links*/
+a {
+    color: #ffffff;
+    text-decoration: none;
+}
+/*this selector effects all p attributes inside the html giving them font sizes of 16px*/
+p {
+    font-size: 16px;
+}
+/*this is a hero class in the html its only being called to display the imainge properties and img for the main page. i can 
+see being used to make the code in the html a lot more cleaner for it only needing 1 line of code */
+.hero {
+    height: 800px;
+    width: 100%;
+    margin-bottom: 25px;
+    background-image: url("./digital-marketing-meeting.jpg");
+    background-size: cover;
+    background-position: center;
+}
+/*this class is using float properties
+this is effecting the images in the parent box to float on the left side*/
+.float-left {
+    float: left;
+    margin-right: 25px;
+}
+/*this class is using float properties
+this is effecting the images in the parent box to float on the right side*/
+.float-right {
+    float: right;
+    margin-left: 25px;
+}
+
+/*this class is effecting the content in the html page 
+the width is deciding how much space to take up to not allow inline - block 
+to be deafult . margin left is giving space between the boxes and the webage.*/
+.content {
+    width: 75%;
+    display: inline-block;
+    margin-left: 20px;
+}
+
+/*benefits class is creating the box with the properties of how it should look inside
+this is being used in the html*/
+
+.benefits {
+    margin-right: 20px;
+    padding: 20px;
+    clear: both;
+    float: right;
+    width: 20%;
+    height: 100%;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color: #2589bd;
+}
+/*this is a class being used to give margin to the bottom of
+the content inside of the parent box with text being a white*/
+.benefit-lead {
+    margin-bottom: 32px;
+    color: #ffffff;
+}
+/*this is a class being called inside the box with the main class "benefits" to include more specific properties
+i removed the benefit cost class since both are doing the same code. */
+.benefit-brand {
+    margin-bottom: 32px;
+    color: #ffffff;
+}
+
+/*.benefit-cost {
+    margin-bottom: 32px;
+    color: #ffffff;
+}*/
+/*these two codes are more specific with it going after the element h3 in side of the attribute of benefit lead and brand.*/
+.benefit-lead h3 {
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.benefit-brand h3 {
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+/*.benefit-brand h3 {
+    margin-bottom: 10px;
+    text-align: center;
+}*/
+/*these classes effect the image properties */
+.benefit-lead img {
+    display: block;
+    margin: 10px auto;
+    max-width: 150px;
+}
+
+.benefit-brand img {
+    display: block;
+    margin: 10px auto;
+    max-width: 150px;
+}
+
+/*.benefit-cost img {
+    display: block;
+    margin: 10px auto;
+    max-width: 150px;
+}*/
+/*the parent box with default properties inside them*/
+.search-engine-optimization {
+    margin-bottom: 20px;
+    padding: 50px;
+    height: 300px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color: #0072bb;
+    color: #ffffff;
+}
+
+.online-reputation-management {
+    margin-bottom: 20px;
+    padding: 50px;
+    height: 300px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color: #0072bb;
+    color: #ffffff;
+}
+
+.social-media-marketing {
+    margin-bottom: 20px;
+    padding: 50px;
+    height: 300px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color: #0072bb;
+    color: #ffffff;
+}
+/*forcing the img to be 200px and nothing larger */
+.search-engine-optimization img {
+    max-height: 200px;
+}
+
+.online-reputation-management img {
+    max-height: 200px;
+}
+
+.social-media-marketing img {
+    max-height: 200px;
+}
+/*specifies the exact attribute in the parent element 
+giving it a font size of 36px with a margin bottom of 20px to gice it a gap*/
+.search-engine-optimization h2 {
+    margin-bottom: 20px;
+    font-size: 36px;
+}
+
+.online-reputation-management h2 {
+    margin-bottom: 20px;
+    font-size: 36px;
+}
+
+.social-media-marketing h2 {
+    margin-bottom: 20px;
+    font-size: 36px;
+}
+/*I removed the class there is only 1 footer with one h2
+so to make the code more simple I now have it as attribute and another more specific 
+on the h2 elment inside of the footer.*/
+
+footer {
+    padding: 30px;
+    clear: both;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-align: center;
+}
+
+footer h2 {
+    font-size: 20px;
+}
